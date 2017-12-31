@@ -1,3 +1,9 @@
 #signupArea {
   width: 50% !important;
 }
+
+.box {
+  background: #b3ddff;
+  border: 2px solid #4280ff;
+  border-radius: 10px;
+}
