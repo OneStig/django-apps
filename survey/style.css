@@ -1,0 +1,54 @@
+.nav-item {
+  font-size: 14px;
+  color: #b8b6b4;
+  font-family: "Motiva Sans", sans-serif;
+  font-weight: normal;
+}
+
+.nav-item:hover {
+  color: #FFFFFF;
+}
+
+.navbar-header {
+  margin-left: 458px;
+}
+
+#title {
+  font-size: 26px;
+  color: #FFFFFF !important;
+  font-family: "Motiva Sans", sans-serif;
+  font-weight: nromal;
+  text-align: left;
+
+  margin-top: 20px;
+  margin-left: 458px;
+  margin-bottom: 5px;
+}
+
+#subtitle {
+  font-weight: normal;
+  font-size: 17px;
+  color: #9099a1;
+  font-family: Arial, Sans-Serif;
+  text-align: left;
+  padding-top: 5px;
+  margin-left: 458px;
+}
+
+.jumbotron {
+  margin-top: 15px;
+  width: 940px;
+  padding: 10px !important;
+}
+
+.question {
+  font-size: 23px;
+  color: #FFFFFF !important;
+  font-family: "Motiva Sans", sans-serif;
+  font-weight: nromal;
+  text-align: left;
+}
+
+.checked {
+  color: orange;
+}
