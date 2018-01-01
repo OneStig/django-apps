@@ -49,6 +49,45 @@
   text-align: left;
 }
 
+#error {
+  color: red;
+}
+
 .checked {
   color: orange;
+}
+
+.fa:hover {
+  color: #906515;
+}
+
+.continue {
+  border-radius: 2px;
+  border: none;
+  padding: 1px !important;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #D2E885;
+  background: linear-gradient( to bottom, #a4d007 5%, #536904 95%);
+  font-size: 12px;
+  line-height: 17px;
+  text-align: left;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+}
+
+
+#continue:hover {
+  background-color: #b6d908 !important;
+}
+
+.fa {
+  cursor: pointer;
+  font-size: 25px !important;
+}
+
+.starA {
+  text-decoration: none !important;
+  color: #212529 !important;
 }
