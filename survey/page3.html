@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Valve Survey</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body style="background-color: #1B2838;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #171A21; height: 104px;">
+
+      <div class="navbar-header">
+
+        <a class="navbar-brand" href="http://steamcommunity.com/">
+          <img src="steamLogo.png" alt="">
+        </a>
+      </div>
+
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a href="http://store.steampowered.com/" class="nav-link">STORE</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="http://steamcommunity.com/" class="nav-link">COMMUNITY</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="http://store.steampowered.com/about/" class="nav-link">ABOUT</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="https://help.steampowered.com/en/" class="nav-link">SUPPORT</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h2 id="title">
+      Short Valve Survey
+    </h2>
+
+    <h3 id="subtitle">
+      You have been selected to take this short survey regarding your Steam experience.
+    </h3>
+
+    <div class="jumbotron" style="background-color: #101822; margin-left: 458px; margin-top">
+      <p class="question">How would you rate your overall Steam experience?</p>
+
+      <a class="starA" href="javascript:star(1);"><span id="star1" class="fa fa-star"></span></a>
+      <a class="starA" href="javascript:star(2);"><span id="star2" class="fa fa-star"></span></a>
+      <a class="starA" href="javascript:star(3);"><span id="star3" class="fa fa-star"></span></a>
+      <a class="starA" href="javascript:star(4);"><span id="star4" class="fa fa-star"></span></a>
+      <a class="starA" href="javascript:star(5);"><span id="star5" class="fa fa-star"></span></a>
+
+      <br>
+
+      <p id="error"></p>
+
+      <button onclick="continueSurvey(3);" type="submit" id="continue" class="btn btn-success" style="background: linear-gradient( to bottom, #799905 5%, #536904 95%); border: none;">Continue</button>
+    </div>
+  </body>
+</html>

@@ -91,3 +91,11 @@
   text-decoration: none !important;
   color: #212529 !important;
 }
+
+.rLabel {
+  font-weight: normal;
+  font-size: 17px;
+  color: #9099a1;
+  font-family: Arial, Sans-Serif;
+  text-align: left;
+}
