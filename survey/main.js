@@ -91,6 +91,8 @@ function continueSurvey(n) {
     } else {
       window.location = 'page3.html';
     }
+  } else if (n == 3) {
+    window.location = 'page4.html';
   }
 }
 

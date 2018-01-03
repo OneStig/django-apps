@@ -99,3 +99,7 @@
   font-family: Arial, Sans-Serif;
   text-align: left;
 }
+
+#drawSpace {
+  cursor: crosshair;
+}
