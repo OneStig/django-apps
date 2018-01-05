@@ -1,4 +1,5 @@
 import numpy as nu
+import re
 
 def addInt(n1, n2):
     if type(n1) != type(1) and type(n2) != type(1):
@@ -6,17 +7,16 @@ def addInt(n1, n2):
     else:
         return n1 + n2
 
-print('test')
 
-a = 'django'
+def funcA():
+    def funcB():
+        print("funcB called")
 
-print(a)
+    print("funcA called")
+    funcB()
 
-print(a[0]) # d
-print(a[5]) # o
-print(a[:4]) # djan
-print(a[1:4]) # jan
-print(a[4:]) # go
+
+funcA()
 
 print(nu.pi)
 
@@ -32,6 +32,19 @@ for i in range(1, 100):
 
 evens = filter(lambda n:n%2 == 0, nums)
 print(list(evens))
+
+patterns = ['term1', 'term2']
+
+text = 'asdfsafkdsjfkdsterm1fsajfdksjfdksf'
+
+for p in patterns:
+    print(p)
+
+    if re.search(p, text):
+        print('found')
+    else:
+        print('not found')
+
 
 #if true:
 
