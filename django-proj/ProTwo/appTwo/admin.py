@@ -1,6 +1,4 @@
 from django.contrib import admin
-from basicapp.models import User
-
+from appTwo.models import User
 # Register your models here.
-
-admin.site.register(user)
+admin.site.register(User)
