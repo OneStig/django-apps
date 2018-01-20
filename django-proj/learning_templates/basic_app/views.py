@@ -10,3 +10,4 @@ def other(request):
 
 def relative(request):
     return render(request,'basic_app/relative_url_templates.html')
+ 
