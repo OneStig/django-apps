@@ -6,20 +6,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
-    <nav class='navbar navbar-default navbar-static-top'>
-      <div class="container">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="{% url 'index' %}">Test Project</a>
+      <div class="container" id="navbarNav">
         <ul class="nav navbar-nav">
-          <li>
-            <a class="navbar-brand" href="{% url 'index' %}">Django</a>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'admin:index' %}">Admin</a>
           </li>
 
-          <li>
-            <a class="navbar-link" href="{% url 'admin:index' %}">Admin</a>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'basic_app:register' %}">Register</a>
           </li>
 
-          <li>
-            <a class="navbar-link" href="{% url 'basic_app:register' %}">Register</a>
-          </li>
         </ul>
       </div>
     </nav>
