@@ -20,4 +20,5 @@ from basic_app import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.CBTemplateView.as_view()),
+    url(r'^basic_app/', include('basic_app.urls', namespace='basic_app'))
 ]
