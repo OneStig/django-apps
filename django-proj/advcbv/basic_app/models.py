@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.urlresolvers import reverse
 
 class School(models.Model):
     name = models.CharField(max_length=256)
@@ -7,6 +8,9 @@ class School(models.Model):
 
     def __str__(self):
         return self.name + " | " + self.location
+
+    def get_absolute_url(self):
+        return reverse("basic_app:detail",kwargs={'pk':self.pk})
 
 class Student(models.Model):
     name = models.CharField(max_length=256)

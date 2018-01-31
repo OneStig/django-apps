@@ -3,12 +3,23 @@
 
 <div class="container">
   <div class="jumbotron">
-    <h1>School Details Page</h1>
-    <h2>Details:</h2>
-    <h3>{{school_detail.name}}</h3>
-    <p>Based in {{school_detail.location}}</p>
-    <p>Principal: {{school_detail.principal}}</p>
+    <h1>Details Page</h1>
+    <h2>School Details:</h2>
+    <p>Id: {{school_details.id}}</p>
+    <p>Name: {{school_details.name}}</p>
+    <p>Principal: {{school_details.principal}}</p>
+    <p>Location: {{school_details.location}}</p>
+    <h3>Students:</h3>
+
+      {% for student in school_details.students.all %}
+        <p>{{student.name}} is {{student.age}} yrs old.</p>
+      {% endfor %}
+
   </div>
 </div>
 
-{% end block%}
+<div class="container">
+    <p><a class='btn btn-warning' href="{% url 'basic_app:update' pk=school_details.pk %}">Update Details</a></p>
+</div>
+
+{% endblock %}
